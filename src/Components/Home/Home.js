@@ -9,8 +9,8 @@ const Home = () => {
     return (
 
         <div>
-            <div className='dd'> <img src={'/image/bg.jpg'} alt="" />
-                <Card.Img variant="top" src="/public/cover-removebg-preview.png" />
+            <div className='dd'> <img src={'/public/logo192.png'} alt="" />
+                <Card.Img variant="top" src="/public/logo192.png" />
                 <h3>po</h3>
             </div>
 
