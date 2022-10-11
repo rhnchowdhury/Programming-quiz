@@ -6,12 +6,11 @@ import { Button } from 'react-bootstrap';
 const Quiz = ({ qz }) => {
     const { name, logo } = qz;
     return (
-
-        <Col >
+        <Col>
             <Card className=' bg-dark bg-opacity-50 p-2 m-2' >
                 <Card.Img variant="top " className='p-1 rounded border-4' src={logo} />
                 <Card.Body className='d-flex justify-content-between '>
-                    <Card.Title className='text-white'><h6>{name}</h6></Card.Title>
+                    <Card.Title className='text-white m-2'><h6>{name}</h6></Card.Title>
                     <Card.Text>
                         <Button>Start Quiz</Button>
                     </Card.Text>
