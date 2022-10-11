@@ -1,18 +1,24 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 import { Button } from 'react-bootstrap';
-import './Quiz.css'
+
 const Quiz = ({ qz }) => {
     const { name, logo } = qz;
     return (
-        <div className='bg-light m-2 p-3 border rounded'>
-            <div className='design'>
-                <img className='bg-dark rounded mb-3' src={logo} alt="" />
-                <div className='d-flex justify-content-between'>
-                    <h5 className=' text-primary' bg="primary">{name}</h5>
-                    <Button variant="primary">Start Quiz</Button>
-                </div>
-            </div>
-        </div>
+
+        <Col >
+            <Card className=' bg-dark bg-opacity-50 p-2 m-2' >
+                <Card.Img variant="top " className='p-1 rounded border-4' src={logo} />
+                <Card.Body className='d-flex justify-content-between '>
+                    <Card.Title className='text-white'><h6>{name}</h6></Card.Title>
+                    <Card.Text>
+                        <Button>Start Quiz</Button>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
+
     );
 };
 
