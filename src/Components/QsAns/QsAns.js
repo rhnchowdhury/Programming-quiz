@@ -9,12 +9,14 @@ const QsAns = ({ op, correctAnswer }) => {
     const popUpToast = (op, right) => {
         if (op === right) {
             toast.success('Your answer is correct !!!', {
-                position: toast.POSITION.TOP_CENTER
+                position: toast.POSITION.TOP_CENTER,
+                autoClose: 3000,
             });
         }
         else {
             toast.error('Your answer is wrong !!! ', {
-                position: toast.POSITION.TOP_CENTER
+                position: toast.POSITION.TOP_CENTER,
+                autoClose: 3000,
             });
         }
     }

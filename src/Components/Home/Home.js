@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 import Row from 'react-bootstrap/Row';
-import { Card } from 'react-bootstrap';
+// import bannerImage from '../../../public/bg.jpg'
 
 const Home = () => {
     const quiz = useLoaderData();
@@ -10,11 +10,13 @@ const Home = () => {
     return (
 
         <div>
-            <div className='dd'> <img src={'/public/logo192.png'} alt="" />
-                <Card.Img variant="top" src="/public/logo192.png" />
+            <div className='dd'>
+                {/* <img src={bannerImage} alt="" /> */}
+
+
+
                 <h3>po</h3>
             </div>
-
 
             <Row xs={1} md={2} lg={4} className='m-5'>
                 {
