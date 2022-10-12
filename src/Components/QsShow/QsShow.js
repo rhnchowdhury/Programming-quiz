@@ -6,22 +6,16 @@ const QsShow = ({ qs }) => {
     const { question, correctAnswer, options } = qs;
     return (
         <div className='m-4'>
-
             <Card>
-
                 <Card.Body>
-                    {/* <Card.Title>{question}</Card.Title> */}
                     <h3 className='mb-4'>{question}</h3>
                     <Card.Text >
                         {
-                            options.map(op => <QsAns op={op}></QsAns>)
+                            options.map(op => <QsAns key={op.id} op={op}></QsAns>)
                         }
                     </Card.Text>
                 </Card.Body>
             </Card>
-            {/* </Row> */}
-
-
         </div>
     );
 };
