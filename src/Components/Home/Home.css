@@ -1,0 +1,25 @@
+.design {
+    display: flex;
+    margin-top: 5%;
+}
+
+.re-design {
+    margin-top: 8%;
+}
+
+@media only screen and (max-width: 576px) {
+    .design {
+        display: block;
+
+    }
+
+    .re-design {
+        margin: 30px;
+
+    }
+
+    .img-design {
+        height: 200px;
+    }
+
+}
