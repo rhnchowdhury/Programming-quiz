@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const QsShow = ({ qs }) => {
     const { question, options, correctAnswer } = qs;
+
     const showAns = event => {
         toast.info(correctAnswer, {
             position: toast.POSITION.TOP_CENTER,
@@ -17,7 +18,6 @@ const QsShow = ({ qs }) => {
             draggable: true,
             progress: undefined,
             theme: 'colored',
-
         });
     }
 
@@ -25,13 +25,10 @@ const QsShow = ({ qs }) => {
         <div className='m-4'>
             <Card>
                 <Card.Body>
-
                     <h3 className='mb-4'>{question}</h3>
-
                     <div className='d-flex justify-content-end'>
                         <ArchiveBoxArrowDownIcon onClick={() => showAns()} className=" text-white-100 " style={{ width: 30 }} /><ToastContainer />
                     </div>
-
                     <Card.Text >
                         {
                             options.map(op => <QsAns key={op.id} op={op} correctAnswer={correctAnswer}></QsAns>)

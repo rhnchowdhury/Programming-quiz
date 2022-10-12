@@ -4,7 +4,7 @@ import QsShow from '../QsShow/QsShow';
 
 const Question = () => {
     const question = useLoaderData()
-    console.log(question)
+    // console.log(question)
     return (
         <div className='mt-4'>
             <h2>{question.data.name} Quiz</h2>
