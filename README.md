@@ -69,14 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-##Project Name
+## Project Name
 
 PrimoQuiz
 
-##Description
+## Description
 
 I developed this project using React.js. I also used Bootstrap framework for designing. act is a JavaScript library used to develop interactive UI. I create a quiz website to understand the basics of react.js, css, javascript.
 
-##Project Link
+## Project Link
 
 https://quiz-site-e85b39.netlify.app/
